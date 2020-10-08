@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShardingSphere_Jdbc_java.iml" filepath="$PROJECT_DIR$/ShardingSphere_Jdbc_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ShardingSphere_Jdbc_yaml/ShardingSphere_Jdbc_yaml.iml" filepath="$PROJECT_DIR$/../ShardingSphere_Jdbc_yaml/ShardingSphere_Jdbc_yaml.iml" />
+    </modules>
+  </component>
+</project>

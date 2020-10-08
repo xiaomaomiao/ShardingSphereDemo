@@ -1,0 +1,45 @@
+spring:
+  shardingsphere:
+    #配置数据源名称，多数据源以逗号进行分隔
+    datasource:
+      names: ds0,ds1
+    #配置各个数据源的基本信息
+      ds0:
+        # type:数据库连接池名称
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/ds0?serverTimezone=UTC
+        username: root
+        password: 1234
+      ds1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/ds1?serverTimezone=UTC
+        username: root
+        password: 1234
+    sharding:
+      tables:
+        user:
+          actual-data-nodes: ds$->{0..1}.user$->{0..1}
+          # 设置分布式自增ID(缺省表示不适用自增主键生成器)
+          key-generator:
+            column: user_id
+            type: SNOWFLAKE #可选值由UUID和SNOWFLAKE
+            props:
+              workers:
+                id: 5
+          # 配置分库策略
+          database-strategy:
+            inline:
+              sharding-column: user_id #配置分片键名称
+              algorithm-expression: ds$->{user_id % 2} #配置分片算法行表达式
+          # 配置分表策略
+          table-strategy:
+             inline:
+              sharding-column: user_id #配置分片键名称
+              algorithm-expression: user$->{user_id % 2} #配置分片算法行表达式
+    props:
+      sql:
+        show: true
+
+
