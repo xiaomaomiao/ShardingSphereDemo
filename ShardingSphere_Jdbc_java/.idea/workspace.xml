@@ -209,7 +209,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-70" />
     <option name="y" value="350" />
     <option name="width" value="1940" />
@@ -383,7 +383,7 @@
     <property name="SearchEverywhereHistoryKey" value="EntityManagerFactory&#9;PSI&#9;JAVA://org.springframework.orm.jpa.AbstractEntityManagerFactoryBean#entityManagerFactory&#10; EntityManagerFa&#9;PSI&#9;JAVA://org.springframework.data.jpa.util.BeanDefinitionUtils.EntityManagerFactoryBeanDefinition&#10;EntityMana&#9;PSI&#9;JAVA://org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistrarPostProcessor" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602170244252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602170261245" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShardingSphere_Jdbc_yaml" />
